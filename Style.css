@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+}
+body {
+    background: #000;
+    /* color: #000; */
+}
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url(image/1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-attachment: fixed; */
+    /* padding: 1px 0; */
+}
+.logo {
+    width: 180px;
+    cursor: pointer;
+}
+nav button {
+    border: 0;
+    outline: 0;
+    background-color: #db0001;
+    /* color: #fff; */
+    padding: 9px 21px;
+    font-size: 18px;
+    border-radius: 4px;
+    margin-left: 17px;
+    cursor: pointer;
+}
+.language {
+    background: transparent;
+    border: 1px solid #fff;
+}
+.language img {
+    width: 14px;
+    margin: 3px 0 0 4px;
+}
+
+
+.header-content {
+    /* color: #fff; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 60px;
+}
+.header-content h1 {
+    font-size: 60px;
+    /* line-height: 70px; */
+    /* font-weight: 900; */
+    max-width: 700px;
+}
+.header-content h3 {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 20px 0 20px 0;
+}
+.header-content p {
+    padding: 20px 0 0 0;
+}
+
+
+.signup {
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.signup input {
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+}
+.signup button {
+    background: #db0001;
+    border: 0;
+    outline: 0;
+    /* color: #fff; */
+    font-size: 26px;
+    cursor: pointer;
+    padding: 15px 30px;
+}
+
+
+.first {
+    font-size: 22px;
+    padding: 30px 12%;
+    border-top: 6px solid rgb(40, 40, 40);
+
+}
+.row{
+    /* color: #fff; */
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.left {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.left h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.left p {
+    font-size: 60p;
+}
+.right {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.right img {
+    display: block;
+    width: 90%;
+    margin: auto;
+    
+}
+/* hr {
+    font-weight: 40px;
+    background-color: #db0001;
+} */
+
+
+/*------------- FAQ------------ */
+.second {
+    padding: 30px 12%;
+    text-align: center;
+    font-size: 18px;
+    border-top: 6px solid rgb(40, 40, 40);
+
+}
+.second h2{
+    /* color: #fff; */
+    font-weight: 900;
+    font-size: 40px;
+}
+.contrainer {
+    padding-top: 30px;
+}
+.data {
+    margin: 1px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.data li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.data li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 27px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after {
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0,5s;
+}
+input[type="radio"] {
+    /* display: block; */
+    display: none;
+}
+.data .content {
+    font-size: 25px;
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s, padding 0.4s;
+}
+
+.data input[type="radio"]:checked + label + .content {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.data input[type="radio"]:checked + label::after {
+    transform: rotate(135deg);
+}
+
+
+.third {
+    /* align-items: center; */
+    padding-top: 50px;
+    text-align: center;
+}
+.third .signup {
+    margin: 20px auto 60px;
+    max-width: 670px;
+}
+
+
+.footer {
+    padding: 50px 15% 10px;
+    /* margin: 20px auto 60px; */
+    border-top: 6px solid rgb(40, 40, 40);
+    color: #777;
+}
+.footer h2 {
+    font-size: 18px;
+    /* font-weight: 400; */
+    margin-bottom: 30px;
+}
+.footer .column {
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+.footer .column a {
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.footer .row {
+    align-items: flex-start;
+    padding: 10px 0;
+}
+.footer .language {
+    padding: 10px 24px;
+    border-radius: 3px;
+}
+.footer p {
+    font-size: 13px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* media query */
+@media only screen and (max-width: 600px) {
+    .logo {
+        width: 100px;
+    }
+    nav button {
+        padding: 3px 7px;
+    }
+    /* nav .language {
+        padding: 4px 8px;
+    } */
+    .header-content {
+        position: unset;
+        transform: none;
+        padding-top: 110px;
+    }
+    .header-content h1 {
+        font-size: 30px;
+    }
+    .signup button {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+    .left, .right {
+        flex-basis: 100%;
+    }
+    .first h2 {
+        font-size: 30px;
+    }
+    .first p {
+        font-size: 17px;
+    }
+    .row:nth-child(2), .row:nth-child(4) {
+        flex-direction: column-reverse;
+    }
+    .first .row {
+        padding: 10px 0;
+    }
+    .second h2 {
+        font-size: 28px;
+    }
+    .contrainer .content {
+        font-size: 17px;
+    }
+    .contrainer li label {
+        padding: 10px;
+        font-size: 20px;
+    }
+    label::after {
+        font-size: 22px;
+    }
+    .third {
+        padding: 50px 40px;
+    }
+}
